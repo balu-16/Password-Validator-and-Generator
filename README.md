@@ -1,60 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Validator and Generator</title>
-</head>
-<body>
-    <h1>🔒 Password Validator and Generator</h1>
-    <p>A C++ program that provides secure password validation and generation. This project combines user details and customizable parameters to create strong passwords and ensure compliance with security standards.</p>
+# Password Manager and Generator
 
-    <h2>✨ Features</h2>
-    <ul>
-        <li><strong>Password Validation:</strong>
-            <ul>
-                <li>Checks strength based on length, numbers, special characters, and uppercase/lowercase variety.</li>
-                <li>Classifies passwords as weak, better, or strong.</li>
-            </ul>
-        </li>
-        <li><strong>Password Generation:</strong>
-            <ul>
-                <li>Generates secure, random passwords based on user inputs (name, birth date, etc.).</li>
-                <li>Includes customizable password length (minimum 8 characters).</li>
-            </ul>
-        </li>
-        <li><strong>Interactive User Flow:</strong>
-            <ul>
-                <li>Allows users to create their own password or get suggestions.</li>
-                <li>Validates user-created passwords for strength.</li>
-            </ul>
-        </li>
-    </ul>
+This C++ program provides a password manager and generator with password strength validation and classification.  It allows users to either enter their own password for evaluation or generate a strong, randomized password based on specified criteria.
 
-    <h2>📝 Input Details</h2>
-    <ul>
-        <li>User information like name, date of birth, department, phone number, and email.</li>
-        <li>Password preferences: custom or auto-generated, desired length, and feedback on suggested passwords.</li>
-    </ul>
+## Features
 
-    <h2>🛠️ Technologies Used</h2>
-    <ul>
-        <li>C++ Standard Libraries (<code>&lt;string&gt;</code>, <code>&lt;ctime&gt;</code>, <code>&lt;cstdlib&gt;</code>, <code>&lt;algorithm&gt;</code>, <code>&lt;iostream&gt;</code>).</li>
-    </ul>
+* **Password Validation:** Checks if a user-provided password meets the following criteria:
+    * Minimum length of 8 characters.
+    * Contains at least one number.
+    * Contains at least one special character.
+    * (Optional, for stronger passwords) Contains both uppercase and lowercase letters.
+* **Password Strength Classification:** Classifies passwords as "weak," "better," or "strong" based on length and character composition.  Passwords of 12 or more characters, or those containing both upper and lowercase letters, are classified as "strong".
+* **Password Generation:** Generates random passwords of a specified length.  Generated passwords are customizable and incorporate elements from the user's first and last names, and date of birth, along with special characters, ensuring a mix of character types.  This helps create more memorable yet reasonably secure passwords.
+* **Customizable Character Sets:** The password generator uses a combination of user-provided information (name, date) and predefined special characters to create passwords.
+* **User Interaction:**  The program interacts with the user through a command-line interface, prompting for input and displaying results.
+* **Error Handling:** Includes basic error handling, such as checking for minimum password length.
+* **Object-Oriented Design:**  The code utilizes classes (`PasswordManager` and `PasswordGenerator`) to encapsulate functionality and promote code reusability.  `PasswordGenerator` inherits from `PasswordManager` to leverage password validation capabilities.
 
-    <h2>🚀 How It Works</h2>
-    <ol>
-        <li>User inputs personal details and chooses to enter or generate a password.</li>
-        <li>Auto-generated passwords incorporate user information and meet strength criteria.</li>
-        <li>Validates both auto-generated and user-entered passwords for security standards.</li>
-    </ol>
+## How to Use
 
-    <h2>🤔 Why Use This?</h2>
-    <ul>
-        <li>Enhance password security effortlessly.</li>
-        <li>Lightweight and efficient with an intuitive user experience.</li>
-    </ul>
+1.  **Compilation:**  Compile the C++ code using a C++ compiler (e.g., g++):
+    ```bash
+    g++ password_manager.cpp -o password_manager
+    ```
+2.  **Execution:** Run the compiled executable:
+    ```bash
+    ./password_manager
+    ```
+3.  **Interaction:** Follow the prompts in the console to either enter your own password for validation or generate a new password.
 
-    <p>Contributions and feedback are welcome! 😊</p>
-</body>
-</html>
+## Code Structure
+
+*   `PasswordManager`: Base class responsible for password validation and strength classification.
+*   `PasswordGenerator`: Derived class that inherits from `PasswordManager` and adds password generation functionality.
+
+## Example Usage
