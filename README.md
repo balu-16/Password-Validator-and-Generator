@@ -34,3 +34,36 @@ This C++ program provides a password manager and generator with password strengt
 *   `PasswordGenerator`: Derived class that inherits from `PasswordManager` and adds password generation functionality.
 
 ## Example Usage
+Enter your Phone Number: 1234567890
+Enter you email-id: [email address removed]
+Enter your First Name: John
+Enter your Last Name: Doe
+Do you have any research Publications(Y|N): N
+How many years of experience do you have? 5
+Enter your Department: Computer Science
+Enter your Date Of Birth (dd mm yyyy): 15 03 1990
+
+Enter your Password(e):
+or
+Shall I Suggest a Password(g): g
+
+Enter the desired password length (minimum 8): 12
+Generated password: J!3n9D0oe1539
+Password is strong!
+
+Do you like the password? (y for YES and n for NO): y
+## Dependencies
+
+*   A C++ compiler (e.g., g++).
+
+## Future Improvements
+
+*   More robust error handling and input validation.
+*   Support for storing and retrieving passwords (securely, of course!).  This would likely involve encryption or integration with a secure password manager.
+*   Improved password generation algorithms to increase randomness and security.
+*   A graphical user interface (GUI) for easier interaction.
+*   Integration with online password strength checkers.
+
+## Contributing
+
+Contributions are welcome!  Please feel free to submit pull requests or open issues.
