@@ -34,6 +34,7 @@ This C++ program provides a password manager and generator with password strengt
 *   `PasswordGenerator`: Derived class that inherits from `PasswordManager` and adds password generation functionality.
 
 ## 📝 Example Usage 📝
+```bash
 Enter your Phone Number: 1234567890
 Enter you email-id: [email address removed]
 Enter your First Name: John
@@ -52,6 +53,7 @@ Generated password: J!3n9D0oe1539
 Password is strong!
 
 Do you like the password? (y for YES and n for NO): y
+```
 ## 🛠️ Future Improvements 🛠️
 
 *   More robust error handling and input validation.
