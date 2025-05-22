@@ -65,3 +65,9 @@ Do you like the password? (y for YES and n for NO): y
 ## 🙌 Contributing 🙌
 
 Contributions are welcome!  Please feel free to submit pull requests or open issues.
+
+---
+
+## License
+This project is licensed as **proprietary and confidential**.  
+**You may not reuse, modify, or redistribute any part of this code.**
